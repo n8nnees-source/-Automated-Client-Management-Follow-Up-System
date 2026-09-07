@@ -42,7 +42,3 @@ Follow-Up
 * Call scheduling
 * Client data synchronization
 * Automated follow-ups
-
-## 📸 Preview
-
-![Workflow](screenshots/workflow.png)
