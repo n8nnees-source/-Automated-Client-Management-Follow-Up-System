@@ -1,61 +1,68 @@
 # ⚙️ Automated Client Management & Follow-Up System
 
-An automated client management and follow-up system built with **n8n, Supabase, Google Forms, Google Sheets, and Gmail**.
+An end-to-end **client management and follow-up automation** built with **n8n, Supabase, Google Forms, Google Sheets, and Gmail**.
 
-It automates the process from receiving a client request to scheduling a call, following up with inactive clients, and closing the request.
+It automates the client journey from the initial request to **call scheduling, automated follow-ups, and request closure**, reducing manual work and preventing potential clients from being forgotten.
 
-## 🔄 How it works
+## 🔄 How It Works
 
 ```text
 Client Request
       ↓
-   Webhook
+   Automated Intake
       ↓
-   Supabase
-      ↓
- Unique Request ID
+   Client Database
       ↓
 Confirmation Email
       ↓
-Scheduling Form
+  Call Scheduling
       ↓
-   Check Status
-    ↙       ↘
+ Check Response
+   ↙         ↘
 Completed   Pending
-   ↓          ↓
-Continue   Follow-Up
-              ↓
-       Second Form
-              ↓
-         Check Again
-          ↙       ↘
-     Completed   Pending
-         ↓          ↓
-      Continue   Close Request
+   ↓           ↓
+Continue    Follow-Up
+                ↓
+          Second Attempt
+                ↓
+           Check Again
+             ↙    ↘
+        Completed  Pending
+            ↓        ↓
+         Continue   Close
 ```
 
-## 🧩 Tech Stack
+## 🧩 Technologies
 
-* **n8n** — Workflow automation
-* **Supabase** — Database & request tracking
-* **Google Forms** — Client forms
-* **Google Sheets** — Scheduling tracking
-* **Gmail** — Automated emails
+* **n8n** — Workflow automation & business logic
+* **Supabase** — Client database & request tracking
+* **Google Forms** — Client information & scheduling
+* **Google Sheets** — Scheduling response tracking
+* **Gmail** — Automated client communication
 
-## 🎯 Features
+## ✨ Key Features
 
 * Automated client intake
-* Unique request IDs
-* Personalized confirmation emails
-* Call scheduling
-* Automated follow-ups
+* Unique request ID generation
+* Client data management
+* Personalized automated emails
+* Call scheduling workflow
+* Multi-step automated follow-ups
 * Second scheduling attempt
 * Automatic request closure
-* Centralized client data
 
-### 🚀 Automation Studio
+## 🛠️ Technical Details
 
-Automating client management from first contact to follow-up.
+The workflow uses **conditional logic, database operations, unique identifiers, scheduled delays, and multiple form submissions** to track each client throughout the process.
 
-Built as an automation system designed to streamline client management and follow-up processes.
+Client information is stored in Supabase, while Google Sheets is used to detect scheduling responses. n8n connects the different services and controls the entire automation.
 
+## 🎯 Purpose
+
+The system is designed to help businesses **capture, manage, and follow up with potential clients automatically**, creating a consistent process from first contact to conversion.
+
+---
+
+### Automation Studio
+
+**Client management. Automated.**
